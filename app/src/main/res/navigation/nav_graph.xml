@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dev.reachforhelp.ui.fragments.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/activityFragment"
+        android:name="com.dev.reachforhelp.ui.fragments.activity.ActivityFragment"
+        android:label="Activity"
+        tools:layout="@layout/fragment_activity" />
+    <fragment
+        android:id="@+id/casesFragment"
+        android:name="com.dev.reachforhelp.ui.fragments.cases.CasesFragment"
+        android:label="Case"
+        tools:layout="@layout/fragment_cases" />
+    <fragment
+        android:id="@+id/helpFragment"
+        android:name="com.dev.reachforhelp.ui.fragments.help.HelpFragment"
+        android:label="Help"
+        tools:layout="@layout/fragment_help" />
+</navigation>
