@@ -10,7 +10,9 @@
         android:id="@+id/tex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"
         android:text="Hello Olamide,"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +24,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#0A2252"
+        android:layout_marginTop="10dp"
         app:cardCornerRadius="8dp"
         app:layout_constraintTop_toBottomOf="@id/tex">
 
@@ -54,7 +57,8 @@ Robery cases"
         android:id="@+id/horinzontalscrlvw"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@id/dashbrd_top_card">
 
         <LinearLayout
@@ -136,7 +140,7 @@ Booklet"
                 android:layout_width="136dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
-                android:backgroundTint="#06183E"
+                android:backgroundTint="#009E94"
                 app:cardCornerRadius="5dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -172,7 +176,6 @@ Booklet"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
         android:text="How do you want to make
 your report?"
         android:textColor="@color/black"
@@ -184,7 +187,7 @@ your report?"
         android:layout_width="160dp"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="80dp"
         android:elevation="10dp"
         app:cardCornerRadius="5dp"
         app:cardElevation="20dp"
@@ -198,11 +201,11 @@ your report?"
 
             <ImageView
                 android:id="@+id/whistleimage"
-                android:src="@drawable/whistleblowing"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@drawable/whistleblowing"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -226,17 +229,18 @@ your report?"
         app:cardElevation="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/whistleblowing">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/videoclipimage"
-                android:src="@drawable/videoclip"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@drawable/videoclip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -253,24 +257,25 @@ your report?"
         android:id="@+id/voicenote"
         android:layout_width="160dp"
         android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="80dp"
         android:layout_marginEnd="20dp"
         app:cardCornerRadius="5dp"
         app:cardElevation="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/voicenoteimage"
-                android:src="@drawable/voicenote"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@drawable/voicenote"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -293,17 +298,18 @@ your report?"
         app:cardElevation="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/voicenote">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <ImageView
                 android:id="@+id/eyewitnessimage"
-                android:src="@drawable/eyewitness"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:src="@drawable/eyewitness"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:layout_width="match_parent"
