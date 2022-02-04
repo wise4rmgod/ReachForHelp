@@ -2,9 +2,11 @@ package com.dev.reachforhelp.ui.dashboard
 
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.view.get
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -18,15 +20,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        supportActionBar?.hide()
+
         binding = ActivityMain2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val navView: BottomNavigationView = binding.navView
-        val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
-
-        // using toolbar as ActionBar
-        setSupportActionBar(toolbar)
+        //  val toolbar = findViewById<View>(R.id.toolbar) as Toolbar
+        // setSupportActionBar(toolbar)
         val navController = findNavController(R.id.nav_host_fragment_activity_main2)
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -37,5 +37,10 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+           // Toast.makeText(this, "help", Toast.LENGTH_SHORT).show()
+
+
     }
+
+
 }
