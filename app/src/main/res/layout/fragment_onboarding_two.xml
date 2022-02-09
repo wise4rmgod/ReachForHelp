@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboarding"
+    tools:context=".ui.dashboard.ui.onboarding.onboardingscreens.OnboardingTwoFragment">
+
+
+    <TextView
+        android:id="@+id/txt_track_arrested"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="516dp"
+        android:text="Track arrested
+                          users"
+        android:gravity="center"
+        android:textColor="@color/welcome_text"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_illegal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Report illegal detention cases and
+                                       police harassment"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_track_arrested" />
+
+    <ImageView
+        android:id="@+id/imagaArrow2"
+        android:layout_width="59dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/arrow_forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_illegal" />
+</androidx.constraintlayout.widget.ConstraintLayout>
