@@ -4,4 +4,15 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="relationship">Relationship</string>
+    <string name="facebook_profile">Facebook Profile</string>
+    <string name="twitter_handle">Twitter handle</string>
+    <string name="add">Add</string>
+    <string name="email_family">Email</string>
+    <string name="phone_family">Phone</string>
+    <string name="fullname_family">Fullname</string>
+    <string name="family_friends">Family/Friends</string>
+    <string name="back_temp">Back</string>
 </resources>
