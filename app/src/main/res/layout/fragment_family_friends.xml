@@ -121,10 +121,6 @@
         app:layout_constraintStart_toStartOf="@+id/textInput_email_address"
         app:layout_constraintTop_toBottomOf="@+id/textInput_email_address">
 
-<!--        <com.google.android.material.textfield.TextInputEditText-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            />-->
         <AutoCompleteTextView
             android:id="@+id/autoText_relationship"
             android:layout_width="match_parent"

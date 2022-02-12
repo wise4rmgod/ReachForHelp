@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.dev.reachforhelp.ui.dashboard.R
-import com.dev.reachforhelp.ui.dashboard.databinding.FragmentHomeBinding
+import com.dev.reachforhelp.databinding.FragmentHomeBinding
+
 
 class HomeFragment : Fragment() {
 
@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
+        val textView: TextView = binding.tex
         homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
