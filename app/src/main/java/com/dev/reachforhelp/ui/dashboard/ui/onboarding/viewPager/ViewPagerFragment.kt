@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.viewpager.widget.ViewPager
 import com.dev.reachforhelp.R
 import com.dev.reachforhelp.databinding.FragmentViewPagerBinding
 import com.dev.reachforhelp.ui.dashboard.ui.onboarding.onboardingscreens.OnboardingOneFragment
@@ -14,7 +15,7 @@ import com.dev.reachforhelp.ui.dashboard.ui.onboarding.onboardingscreens.Onboard
 
 class ViewPagerFragment : Fragment() {
 
- private lateinit var binding: FragmentViewPagerBinding
+    private lateinit var binding: FragmentViewPagerBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
