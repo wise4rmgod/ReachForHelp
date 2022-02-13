@@ -22,4 +22,9 @@
         android:name="com.dev.reachforhelp.ui.dashboard.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/casesFragment"
+        android:name="com.dev.reachforhelp.ui.cases.CasesFragment"
+        android:label="cases_fragment"
+        tools:layout="@layout/cases_fragment" />
 </navigation>
