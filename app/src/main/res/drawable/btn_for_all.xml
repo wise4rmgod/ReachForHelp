@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 
-    <solid android:color="@color/btn_backgroud"/>
+    <solid android:color="@color/btn_background"/>
     <size
         android:width="5dp"
         android:height="1dp" />
