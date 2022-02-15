@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
+
     app:startDestination="@id/navigation_home">
 
     <fragment
@@ -23,8 +24,11 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
+
         android:id="@+id/whistleBlowerFragment"
         android:name="com.dev.reachforhelp.ui.whistleblower.WhistleBlowerFragment"
         android:label="fragment_whistle_blower"
         tools:layout="@layout/fragment_whistle_blower" />
+
+      
 </navigation>
