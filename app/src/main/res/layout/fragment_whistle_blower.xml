@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.whistleblower.WhistleBlowerFragment">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="411dp"
+        android:layout_height="468dp"
+        android:background="@drawable/whistle_image"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_map_indicator"
+                android:layout_width="50dp"
+                android:layout_height="61dp"
+                android:src="@drawable/google_indithree"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_map_info"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="No 1 Tasie street Eligbolo Port Harcourt Rivers State"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_map_indicator"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Or Type location"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtInput_laoction"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Enter your location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:textColor="@color/black" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/txt_illegal_arrest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Illegal Arrest : "
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtInput_laoction" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/txt_illegal_arrest"
+        app:layout_constraintTop_toBottomOf="@+id/txtInput_laoction">
+
+        <RadioButton
+            android:id="@+id/radio_illegal_No"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="No" />
+
+        <RadioButton
+            android:id="@+id/radio_illegal_Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Yes" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_harassment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Harassment :  "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_illegal_arrest" />
+
+    <RadioGroup
+        android:id="@+id/radio_harassment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup">
+
+        <RadioButton
+            android:id="@+id/radio_harassment_No"
+            android:text="No"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/radio_harassment_Yes"
+            android:text="Yes"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txt_robbery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Robbery :          "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_harassment" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/radio_harassment"
+        app:layout_constraintStart_toStartOf="@+id/radio_harassment"
+        app:layout_constraintTop_toBottomOf="@+id/radio_harassment">
+
+        <RadioButton
+            android:id="@+id/radio_robbery_No"
+            android:text="No"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <RadioButton
+            android:id="@+id/radio_robbery_Yes"
+            android:text="Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_kidnapped"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Kidnap :     "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_robbery" />
+
+    <RadioGroup
+        android:id="@+id/radio_kidnap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup3"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup3"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3">
+
+        <RadioButton
+            android:id="@+id/radio_kidnap_No"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="No" />
+
+        <RadioButton
+            android:id="@+id/radio_kidnap_Yes"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Yes" />
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_more_info"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="More Info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radio_kidnap">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_more_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_report_matter"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btn_background"
+        android:text="Report"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInput_more_info" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
