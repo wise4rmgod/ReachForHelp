@@ -3,8 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-
+            
     app:startDestination="@id/navigation_home">
+
 
     <fragment
         android:id="@+id/navigation_home"
@@ -24,9 +25,34 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
-        android:id="@+id/whistleBlowerFragment"
-        android:name="com.dev.reachforhelp.ui.whistleblower.WhistleBlowerFragment"
-        android:label="fragment_whistle_blower"
-        tools:layout="@layout/fragment_whistle_blower" />
 
+        android:id="@+id/onboardingOneFragment"
+        android:name="com.dev.reachforhelp.ui.onboarding.Screens.OnboardingOneFragment"
+        android:label="fragment_onboarding_one"
+        tools:layout="@layout/fragment_onboarding_one" />
+    <fragment
+        android:id="@+id/onboardingThreeFragment"
+        android:name="com.dev.reachforhelp.ui.onboarding.Screens.OnboardingThreeFragment"
+        android:label="fragment_onboarding_three"
+        tools:layout="@layout/fragment_onboarding_three" />
+    <fragment
+        android:id="@+id/onboardingTwoFragment"
+        android:name="com.dev.reachforhelp.ui.onboarding.Screens.OnboardingTwoFragment"
+        android:label="fragment_onboarding_two"
+        tools:layout="@layout/fragment_onboarding_two" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.dev.reachforhelp.ui.onboarding.viewpager.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_onboardingTwoFragment"
+            app:destination="@id/onboardingTwoFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_onboardingThreeFragment"
+            app:destination="@id/onboardingThreeFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_onboardingOneFragment"
+            app:destination="@id/onboardingOneFragment" />
+   
 </navigation>
