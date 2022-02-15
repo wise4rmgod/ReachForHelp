@@ -27,4 +27,6 @@
         android:name="com.dev.reachforhelp.ui.humanright.HumanRightFragment"
         android:label="human_right_fragment"
         tools:layout="@layout/human_right_fragment" />
+
+     
 </navigation>

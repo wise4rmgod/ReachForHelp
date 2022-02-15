@@ -6,6 +6,7 @@
     <string name="title_notifications">Notifications</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="title_activity_main">Main Activity</string>
+
     <string name="human_right_doc">
        \n\n 1.1 Lorem ipsum dolor sit amet,consectetur
         \nadipiscing elit.
@@ -22,6 +23,7 @@
         Nulla nisl vitae dolor auctor tincidunt sit amet ac dolor.
         Quisque pulvinar nibh a lacus euismod pulvinar. Nullam interdum purus nisi.
         Donec consectetur consequat porta. Fusce ante felis, tincidunt nec isus sed,
-        porttitor pretium erat. Etiam eu hendreritdolor.
+        porttitor pretium erat. Etiam eu hendreritdolor.r
+      
     </string>
 </resources>
