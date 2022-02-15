@@ -34,6 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="@string/human_right_doc"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/txt_human_right_title"
                 app:layout_constraintStart_toStartOf="@+id/txt_human_right_title"
                 app:layout_constraintTop_toBottomOf="@+id/txt_human_right_title" />
