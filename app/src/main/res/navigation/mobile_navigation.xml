@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/humanRightFragment">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -23,8 +23,10 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
     <fragment
-        android:id="@+id/safetyGuideFragment"
-        android:name="com.dev.reachforhelp.ui.safetyguide.SafetyGuideFragment"
-        android:label="safety_guide_fragment"
-        tools:layout="@layout/safety_guide_fragment" />
+        android:id="@+id/humanRightFragment"
+        android:name="com.dev.reachforhelp.ui.humanright.HumanRightFragment"
+        android:label="human_right_fragment"
+        tools:layout="@layout/human_right_fragment" />
+
+     
 </navigation>
