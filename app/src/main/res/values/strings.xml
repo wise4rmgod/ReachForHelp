@@ -6,4 +6,22 @@
     <string name="title_notifications">Notifications</string>
     <string name="welcome_back">Welcome Back</string>
     <string name="title_activity_main">Main Activity</string>
+    <string name="human_right_doc">
+       \n\n 1.1 Lorem ipsum dolor sit amet,consectetur
+        \nadipiscing elit.
+         Suspendisse commodo dolor justo,
+         rhoncus aliquet mauris auctor vel.
+         Phasellus finibus auctor sem,
+         sit amet porta arcu egestas non.
+         Nulla nisl vitae dolor auctor tincidunt sit amet ac dolor.
+         Quisque pulvinar nibh a lacus euismod.
+        \n\n1.2  Lorem ipsum dolor sit amet, consectetur
+        \nadipiscing elit. Suspendisse commodo dolor justo rhoncus
+        aliquet mauris auctor vel. Phasellus finibus auctor sem,
+        sit amet porta arcu egestas non.
+        Nulla nisl vitae dolor auctor tincidunt sit amet ac dolor.
+        Quisque pulvinar nibh a lacus euismod pulvinar. Nullam interdum purus nisi.
+        Donec consectetur consequat porta. Fusce ante felis, tincidunt nec isus sed,
+        porttitor pretium erat. Etiam eu hendreritdolor.
+    </string>
 </resources>
