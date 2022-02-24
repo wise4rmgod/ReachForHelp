@@ -9,6 +9,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="20dp"
         android:src="@drawable/videoclip"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,6 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         android:text="Hello Olamide,"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -29,12 +31,11 @@
         android:id="@+id/dashbrd_top_card"
         android:layout_width="match_parent"
         android:layout_height="126dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginTop="24dp"
         android:backgroundTint="#0A2252"
         app:cardCornerRadius="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tex">
+        app:layout_constraintTop_toBottomOf="@id/tex"
+        tools:layout_editor_absoluteX="20dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -65,20 +66,21 @@ Robery cases"
         android:id="@+id/horinzontalscrlvw"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="24dp"
         android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@id/dashbrd_top_card">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="136dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
-                android:backgroundTint="#009E94"
+                android:backgroundTint="@color/human_right"
                 app:cardCornerRadius="5dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -113,7 +115,7 @@ Booklet"
                 android:layout_width="136dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
-                android:backgroundTint="#06183E"
+                android:backgroundTint="@color/safety_guide"
                 app:cardCornerRadius="5dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -148,7 +150,7 @@ Booklet"
                 android:layout_width="136dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
-                android:backgroundTint="#009E94"
+                android:backgroundTint="@color/human_right"
                 app:cardCornerRadius="5dp">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -184,6 +186,7 @@ Booklet"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:text="How do you want to make
 your report?"
         android:textColor="@color/black"
@@ -195,7 +198,7 @@ your report?"
         android:layout_width="160dp"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="150dp"
         android:elevation="10dp"
         app:cardCornerRadius="5dp"
         app:cardElevation="20dp"
@@ -232,7 +235,7 @@ your report?"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:elevation="10dp"
+        android:elevation="8dp"
         app:cardCornerRadius="5dp"
         app:cardElevation="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -265,10 +268,10 @@ your report?"
         android:id="@+id/voicenote"
         android:layout_width="160dp"
         android:layout_height="100dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="20dp"
         app:cardCornerRadius="5dp"
-        app:cardElevation="20dp"
+        app:cardElevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">

@@ -10,14 +10,14 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.dev.reachforhelp.databinding.FragmentHomeBinding
 import androidx.appcompat.app.AppCompatActivity
-
-
+import com.google.android.material.navigation.NavigationView
 
 
 class HomeFragment : Fragment() {
 
     private lateinit var homeViewModel: HomeViewModel
     private var _binding: FragmentHomeBinding? = null
+    private lateinit var navController: NavigationView
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -38,6 +38,8 @@ class HomeFragment : Fragment() {
       /**  homeViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         }) **/
+
+
         return root
     }
 

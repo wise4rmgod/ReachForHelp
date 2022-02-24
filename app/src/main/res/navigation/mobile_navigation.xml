@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
             
-    app:startDestination="@id/navigation_home">
+    app:startDestination="@id/splashScreenFragment">
 
     <fragment
         android:id="@+id/navigation_home"
@@ -28,5 +28,45 @@
         android:name="com.dev.reachforhelp.ui.dashboard.ui.frnds_family.Frnds_FamilyFragment"
         android:label="frnds__family_fragment"
         tools:layout="@layout/frnds__family_fragment" />
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.dev.reachforhelp.ui.onboarding.Screens.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_splashScreenFragment_to_viewPagerFragment"
+            app:destination="@id/viewPagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingOneFragment"
+        android:name="com.dev.reachforhelp.ui.onboarding.Screens.OnboardingOneFragment"
+        android:label="fragment_onboarding_one"
+        tools:layout="@layout/fragment_onboarding_one" />
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.dev.reachforhelp.ui.onboarding.viewpager.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager" >
+        <action
+            android:id="@+id/action_viewPagerFragment_to_onboardingThreeFragment"
+            app:destination="@id/onboardingThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardingTwoFragment"
+        android:name="com.dev.reachforhelp.ui.onboarding.Screens.OnboardingTwoFragment"
+        android:label="fragment_onboarding_two"
+        tools:layout="@layout/fragment_onboarding_two" />
+    <fragment
+        android:id="@+id/onboardingThreeFragment"
+        android:name="com.dev.reachforhelp.ui.onboarding.Screens.OnboardingThreeFragment"
+        android:label="fragment_onboarding_three"
+        tools:layout="@layout/fragment_onboarding_three" >
+        <action
+            android:id="@+id/action_onboardingThreeFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 
 </navigation>

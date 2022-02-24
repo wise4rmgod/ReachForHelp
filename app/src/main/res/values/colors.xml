@@ -11,5 +11,8 @@
 
     <color name="video_background">#33009E94</color>
     <color name="btn_background">#0A2252</color>
+    <color name="human_right">#33009E94</color>
+    <color name="safety_guide">#3306183E</color>
+    <color name="screen_color">#0D0956EA</color>
 
 </resources>
