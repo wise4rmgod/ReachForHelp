@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_next"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:src="@drawable/onboarding"
@@ -35,7 +35,7 @@
         android:id="@+id/text_illegal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="90dp"
+        android:layout_marginBottom="120dp"
         android:gravity="center"
         android:text="Report illegal detention cases and
                                        police harassment"

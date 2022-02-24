@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.dev.reachforhelp.R
 import com.dev.reachforhelp.databinding.FragmentOnboardingThreeBinding
 
@@ -20,6 +21,9 @@ class OnboardingThreeFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentOnboardingThreeBinding.inflate(layoutInflater)
 
+        binding.btnGetStarted.setOnClickListener {
+            findNavController().navigate(R.id.action_onboardingThreeFragment_to_navigation_home)
+        }
         return binding.root
     }
 

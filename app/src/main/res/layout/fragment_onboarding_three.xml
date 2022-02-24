@@ -37,7 +37,6 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/standard_big_margin"
         android:layout_marginEnd="@dimen/standard_big_margin"
-        android:layout_marginBottom="@dimen/standard_big_margin"
         android:gravity="center"
         android:text="make a report for someone else that is been arrested illegally or in detention, also plate
         number capture for tracking.\n"
@@ -53,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/standard_big_margin"
         android:layout_marginEnd="@dimen/standard_big_margin"
-        android:layout_marginBottom="40dp"
+        android:layout_marginBottom="80dp"
         android:backgroundTint="@color/white"
         android:text="Get started"
         android:textColor="@color/black"

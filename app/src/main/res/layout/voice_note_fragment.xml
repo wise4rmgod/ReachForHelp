@@ -7,7 +7,7 @@
     tools:context=".ui.voicenote.VoiceNoteFragment">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_next"
         android:layout_width="159dp"
         android:layout_height="167dp"
         android:layout_marginTop="212dp"
@@ -26,7 +26,7 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/img_next" />
 
     <Button
         android:id="@+id/btn_voice_not"

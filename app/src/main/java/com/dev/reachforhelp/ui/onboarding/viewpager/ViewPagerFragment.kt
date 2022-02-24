@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.dev.reachforhelp.R
 import com.dev.reachforhelp.databinding.FragmentViewPagerBinding
@@ -26,8 +27,7 @@ class ViewPagerFragment : Fragment() {
 
         val fragList = arrayListOf<Fragment>(
             OnboardingOneFragment(),
-            OnboardingTwoFragment(),
-            OnboardingThreeFragment()
+            OnboardingTwoFragment()
         )
 
         val adapter = ViewPagerAdapter(
@@ -38,8 +38,29 @@ class ViewPagerFragment : Fragment() {
 
         binding.viewPager2.adapter = adapter
 
-        return binding.root
+        binding.circleIndicator.setViewPager(binding.viewPager2)
+
+        binding.viewPager2.registerOnPageChangeCallback(
+            object : ViewPager2.OnPageChangeCallback() {
+
+
+                override fun onPageSelected(position: Int) {
+                    super.onPageSelected(position)
+
+                    if (position == adapter.itemCount - 1) {
+                        binding.imgNext.setOnClickListener {
+                            findNavController().navigate(R.id.action_viewPagerFragment_to_onboardingThreeFragment)
+                        }
+
+
+//        binding.imgNext.setOnClickListener {
+//            findNavController().navigate(R.id.action_viewPagerFragment_to_onboardingThreeFragment)
+//        }
+
+                    }
+                }
+
+            })
+                    return binding.root
     }
-
-
 }
