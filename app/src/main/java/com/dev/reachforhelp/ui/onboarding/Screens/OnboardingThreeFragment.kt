@@ -22,7 +22,7 @@ class OnboardingThreeFragment : Fragment() {
         binding = FragmentOnboardingThreeBinding.inflate(layoutInflater)
 
         binding.btnGetStarted.setOnClickListener {
-            findNavController().navigate(R.id.action_onboardingThreeFragment_to_navigation_home)
+            findNavController().navigate(R.id.action_onboardingThreeFragment_to_signupFragment)
         }
         return binding.root
     }

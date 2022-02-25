@@ -9,9 +9,9 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/videoclip"
+        android:src="@drawable/notification"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="70dp"
         android:text="Hello Olamide,"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -31,11 +31,14 @@
         android:id="@+id/dashbrd_top_card"
         android:layout_width="match_parent"
         android:layout_height="126dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         android:backgroundTint="#0A2252"
         app:cardCornerRadius="8dp"
-        app:layout_constraintTop_toBottomOf="@id/tex"
-        tools:layout_editor_absoluteX="20dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tex">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -77,6 +80,7 @@ Robery cases"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_human_right"
                 android:layout_width="136dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
@@ -112,6 +116,7 @@ Booklet"
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_safty"
                 android:layout_width="136dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
@@ -147,6 +152,7 @@ Booklet"
 
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/card_family"
                 android:layout_width="136dp"
                 android:layout_height="60dp"
                 android:layout_marginStart="10dp"
@@ -198,10 +204,10 @@ your report?"
         android:layout_width="160dp"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="200dp"
         android:elevation="10dp"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -234,10 +240,10 @@ your report?"
         android:layout_width="160dp"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:elevation="8dp"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/whistleblowing">
 
@@ -268,9 +274,9 @@ your report?"
         android:id="@+id/voicenote"
         android:layout_width="160dp"
         android:layout_height="100dp"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="200dp"
         android:layout_marginEnd="20dp"
-        app:cardCornerRadius="5dp"
+        app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -305,8 +311,8 @@ your report?"
         android:layout_height="100dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
-        app:cardCornerRadius="5dp"
-        app:cardElevation="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/voicenote">
 

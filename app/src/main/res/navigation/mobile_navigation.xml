@@ -10,7 +10,29 @@
         android:id="@+id/navigation_home"
         android:name="com.dev.reachforhelp.ui.dashboard.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_whistleBlowerFragment"
+            app:destination="@id/whistleBlowerFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_safetyGuideFragment"
+            app:destination="@id/safetyGuideFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_videoClipFragment"
+            app:destination="@id/videoClipFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+        <action
+            android:id="@+id/action_navigation_home_to_voiceNoteFragment"
+            app:destination="@id/voiceNoteFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_frnds_FamilyFragment"
+            app:destination="@id/frnds_FamilyFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_humanRightFragment"
+            app:destination="@id/humanRightFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -53,6 +75,9 @@
         <action
             android:id="@+id/action_viewPagerFragment_to_onboardingThreeFragment"
             app:destination="@id/onboardingThreeFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
     </fragment>
     <fragment
         android:id="@+id/onboardingTwoFragment"
@@ -67,6 +92,69 @@
         <action
             android:id="@+id/action_onboardingThreeFragment_to_navigation_home"
             app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_onboardingThreeFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.dev.reachforhelp.ui.dashboard.ui.change_password.ChangePasswordFragment"
+        android:label="change_password_fragment"
+        tools:layout="@layout/change_password_fragment" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.dev.reachforhelp.ui.dashboard.ui.forgot_password.ForgotPasswordFragment"
+        android:label="forgot_password_fragment"
+        tools:layout="@layout/forgot_password_fragment" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/whistleBlowerFragment"
+        android:name="com.dev.reachforhelp.ui.whistleblower.WhistleBlowerFragment"
+        android:label="fragment_whistle_blower"
+        tools:layout="@layout/fragment_whistle_blower" />
+    <fragment
+        android:id="@+id/humanRightFragment"
+        android:name="com.dev.reachforhelp.ui.humanright.HumanRightFragment"
+        android:label="human_right_fragment"
+        tools:layout="@layout/human_right_fragment" />
+    <fragment
+        android:id="@+id/signinFragment"
+        android:name="com.dev.reachforhelp.ui.login.SigninFragment"
+        android:label="signin_fragment"
+        tools:layout="@layout/signin_fragment" >
+        <action
+            android:id="@+id/action_signinFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/safetyGuideFragment"
+        android:name="com.dev.reachforhelp.ui.safetyguide.SafetyGuideFragment"
+        android:label="safety_guide_fragment"
+        tools:layout="@layout/safety_guide_fragment" />
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.dev.reachforhelp.ui.register.SignupFragment"
+        android:label="signup_fragment"
+        tools:layout="@layout/signup_fragment" >
+        <action
+            android:id="@+id/action_signupFragment_to_signinFragment"
+            app:destination="@id/signinFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_forgotPasswordFragment"
+            app:destination="@id/forgotPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/voiceNoteFragment"
+        android:name="com.dev.reachforhelp.ui.voicenote.VoiceNoteFragment"
+        android:label="voice_note_fragment"
+        tools:layout="@layout/voice_note_fragment" />
+    <fragment
+        android:id="@+id/videoClipFragment"
+        android:name="com.dev.reachforhelp.ui.video.VideoClipFragment"
+        android:label="video_clip_fragment"
+        tools:layout="@layout/video_clip_fragment" />
 
 </navigation>

@@ -6,7 +6,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.dev.reachforhelp.R
+import com.dev.reachforhelp.databinding.SignupFragmentBinding
 
 class SignupFragment : Fragment() {
 
@@ -15,12 +17,18 @@ class SignupFragment : Fragment() {
     }
 
     private lateinit var viewModel: SignupViewModel
+    private var binding: SignupFragmentBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.signup_fragment, container, false)
+        binding = SignupFragmentBinding.inflate(layoutInflater)
+
+        binding!!.signUpbtn.setOnClickListener {
+            findNavController().navigate(R.id.action_signupFragment_to_signinFragment)
+        }
+        return binding!!.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
