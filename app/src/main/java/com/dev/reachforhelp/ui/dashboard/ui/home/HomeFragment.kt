@@ -40,9 +40,9 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_navigation_home_to_whistleBlowerFragment)
         }
 
-//        binding.eyewitness.setOnClickListener {
-//            findNavController().navigate(R.id.action_navigation_home_t)
-//        }
+        binding.eyewitness.setOnClickListener {
+            findNavController().navigate(R.id.action_navigation_home_to_eyeWitnessFragment)
+        }
         binding.videoclip.setOnClickListener {
             findNavController().navigate(R.id.action_navigation_home_to_videoClipFragment)
         }

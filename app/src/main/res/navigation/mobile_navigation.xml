@@ -32,6 +32,9 @@
         <action
             android:id="@+id/action_navigation_home_to_humanRightFragment"
             app:destination="@id/humanRightFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_eyeWitnessFragment"
+            app:destination="@id/eyeWitnessFragment" />
     </fragment>
 
     <fragment
@@ -156,5 +159,10 @@
         android:name="com.dev.reachforhelp.ui.video.VideoClipFragment"
         android:label="video_clip_fragment"
         tools:layout="@layout/video_clip_fragment" />
+    <fragment
+        android:id="@+id/eyeWitnessFragment"
+        android:name="com.dev.reachforhelp.ui.eyeWitness.EyeWitnessFragment"
+        android:label="eye_witness_fragment"
+        tools:layout="@layout/eye_witness_fragment" />
 
 </navigation>
