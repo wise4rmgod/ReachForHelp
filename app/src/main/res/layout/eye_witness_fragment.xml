@@ -29,6 +29,7 @@
         android:layout_marginTop="32dp"
         android:text="Illegal Arrest:"
         android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
@@ -57,6 +58,7 @@
             android:text="Yes"
             android:textColor="@color/black" />
     </RadioGroup>
+
     <TextView
         android:id="@+id/harassment_witness"
         android:layout_width="wrap_content"
@@ -65,6 +67,7 @@
         android:layout_marginTop="16dp"
         android:text="Harassment:"
         android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/illegal_arrest" />
 
@@ -101,6 +104,7 @@
         android:layout_marginTop="16dp"
         android:text="Robbery :"
         android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/harassment_witness" />
 
@@ -128,6 +132,7 @@
             android:textColor="@color/black"
             android:text="Yes" />
     </RadioGroup>
+
     <TextView
         android:id="@+id/kidnap_witness"
         android:layout_width="wrap_content"
@@ -136,6 +141,7 @@
         android:layout_marginTop="16dp"
         android:text="Kidnap:"
         android:textColor="@color/black"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/robbery_witness" />
 
