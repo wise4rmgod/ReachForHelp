@@ -11,18 +11,18 @@
         android:id="@+id/img_notification"
         android:layout_width="87dp"
         android:layout_height="56dp"
-        android:layout_marginStart="@dimen/standard_big_margin"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="@dimen/standard_margin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/notification" />
+        app:srcCompat="@drawable/girl" />
 
     <TextView
         android:id="@+id/txt_notify_title"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="@dimen/standard_medium_margin"
         android:text="Your report has been submitted successfully"
         android:textColor="@color/black"
@@ -34,7 +34,6 @@
         android:id="@+id/txt_notify_time"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/standard_small_margin"
         android:layout_marginBottom="@dimen/standard_small_margin"
         android:text="10h ago"
         android:textColor="@color/black"

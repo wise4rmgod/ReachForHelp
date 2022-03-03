@@ -14,5 +14,6 @@
     <color name="human_right">#33009E94</color>
     <color name="safety_guide">#3306183E</color>
     <color name="screen_color">#0D0956EA</color>
+    <color name="help_color">#009E94</color>
 
 </resources>

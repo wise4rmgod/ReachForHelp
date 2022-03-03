@@ -9,10 +9,12 @@
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="16dp"
         android:elevation="16dp"
         android:padding="8dp"
-        app:cardCornerRadius="16dp"
-        android:layout_margin="16dp"
+        app:cardCornerRadius="18dp"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -34,10 +36,10 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/text_info_title"
+                android:id="@+id/case_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/standard_margin"
+                android:layout_marginStart="16dp"
                 android:text="New Record 1"
                 android:textColor="@color/black"
                 android:textSize="16sp"
@@ -46,32 +48,30 @@
 
             <ImageView
                 android:id="@+id/img_case"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="102dp"
+                android:layout_height="99dp"
                 android:layout_marginStart="@dimen/standard_medium_margin"
-                android:layout_marginTop="@dimen/standard_small_margin"
                 android:scaleType="centerCrop"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_case_date"
-                app:srcCompat="@drawable/ic_launcher_background" />
+                app:srcCompat="@drawable/voice_note" />
 
             <TextView
                 android:id="@+id/txt_case_newRecord"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/standard_medium_margin"
-                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginTop="16dp"
                 android:text="New Record"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintStart_toEndOf="@+id/img_case"
-                app:layout_constraintTop_toBottomOf="@+id/text_info_title" />
+                app:layout_constraintTop_toBottomOf="@+id/case_title" />
 
             <TextView
                 android:id="@+id/txt_case_time"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/standard_small_margin"
                 android:text="10:30"
                 android:textColor="@color/black"
                 android:textSize="16sp"
@@ -83,7 +83,6 @@
                 android:id="@+id/case_tap_toplay"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/standard_small_margin"
                 android:layout_marginBottom="@dimen/standard_medium_margin"
                 android:text="Tap to play"
                 android:textColor="@color/black"
@@ -94,7 +93,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/img_case" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/case_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/standard_medium_margin"

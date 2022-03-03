@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:gravity="center"
         android:text="Start video to report a case"
         android:textColor="@color/black"
@@ -22,10 +22,10 @@
 
     <VideoView
         android:id="@+id/videoView"
-        android:layout_width="361dp"
-        android:layout_height="369dp"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
         android:layout_margin="20dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:backgroundTint="@color/video_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

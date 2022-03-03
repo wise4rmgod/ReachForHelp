@@ -9,9 +9,9 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="20dp"
-        android:src="@drawable/notification"
+        android:src="@drawable/videoclip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="65dp"
         android:text="Hello Olamide,"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -69,14 +69,14 @@ Robery cases"
         android:id="@+id/horinzontalscrlvw"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:scrollbars="none"
         app:layout_constraintTop_toBottomOf="@id/dashbrd_top_card">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="8dp"
             android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
@@ -192,7 +192,7 @@ Booklet"
         android:layout_width="190dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:text="How do you want to make
 your report?"
         android:textColor="@color/black"
@@ -204,13 +204,12 @@ your report?"
         android:layout_width="160dp"
         android:layout_height="100dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="24dp"
         android:elevation="10dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/txt">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -274,13 +273,12 @@ your report?"
         android:id="@+id/voicenote"
         android:layout_width="160dp"
         android:layout_height="100dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/txt">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -309,7 +307,7 @@ your report?"
         android:id="@+id/eyewitness"
         android:layout_width="160dp"
         android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="20dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="8dp"

@@ -12,7 +12,7 @@
         android:title="Cases" />
 
     <item
-        android:id="@+id/navigation_help"
+        android:id="@+id/helpFragment"
         android:icon="@drawable/ic_help"
         android:title="Help" />
 
